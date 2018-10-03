@@ -11,7 +11,7 @@ const style = {
 }
 
 const AclFilterStyle = {
-    height: "50px",
+    height: "200px",
 }
 
 const userMessagePlaceholder = "This message will be displayed to VPN user upon a successfull critera match"

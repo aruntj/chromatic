@@ -21,7 +21,7 @@ class AclFilter extends Component  {
                     <span style={{marginLeft: "5px"}}> {this.props.text}  </span>
                 </div>
                 <div style={{margin: "10px"}}>
-                    <textarea style={{width: "100%", height: "100px"}} placeholder={this.props.placeholder}/>
+                    <textarea style={{width: "100%", height: '53px'}} placeholder={this.props.placeholder}/>
                 </div>
 
             </div>
