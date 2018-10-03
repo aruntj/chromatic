@@ -16,3 +16,22 @@
 .field > div {
     margin-bottom: 20px;
 }
+.left-right {
+    display: grid;
+    grid-template-areas: 
+      'left right';
+    grid-gap: 20px;
+  }
+  
+  /* .left-right > div {
+    padding-left: 20px;
+    padding-right: 20px;
+  } */
+  
+  .left {
+    grid-area: left;
+  }
+  
+  .right {
+    grid-area: right;
+  }
