@@ -1,7 +1,7 @@
 import React from 'react';
 
 const style = {
-    width: "500px"
+    width: "300px"
 }
 
 const ComboBox = ({values}) => {2
