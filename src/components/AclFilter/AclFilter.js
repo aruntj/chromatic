@@ -18,10 +18,10 @@ class AclFilter extends Component  {
                             containerStyle={{display:'inline-block'}}
                             value = { this.state.applyAcl } 
                             onToggle = {this.onToggle} />                
-                    <span style={{marginLeft: "5px"}}> Apply nework ACL on traffic  </span>
+                    <span style={{marginLeft: "5px"}}> {this.props.text}  </span>
                 </div>
                 <div style={{margin: "10px"}}>
-                    <textarea style={{width: "100%", height: "100px"}}/>
+                    <textarea style={{width: "100%", height: "100px"}} placeholder={this.props.placeholder}/>
                 </div>
 
             </div>

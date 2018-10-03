@@ -11,4 +11,4 @@ export const options = {
 
 
 storiesOf('AclFilter', module).
-add('Default', () => <AclFilter values={options} />)
+add('Default', () => <AclFilter values={options} text="Apply nework ACL on traffic" />)

@@ -3,16 +3,15 @@ import React from "react";
 
 import RadioGroup from '../RadioGroup/RadioGroup';
 import '../Dap.css';
+import AclFilter from '../AclFilter/AclFilter';
 
 const style = {
     display: "flex",
     flexDirection: "column",
 }
 
-const textAreaStyle = {
-    width: '100%',
-    height: '70px',
-    marginTop: '20px',
+const AclFilterStyle = {
+    height: "50px",
 }
 
 const userMessagePlaceholder = "This message will be displayed to VPN user upon a successfull critera match"
@@ -25,8 +24,13 @@ const Actions = ({radioItems}) => {
                 <RadioGroup radioItems={radioItems}/>
             </div>
             <div style={style}>
-                <textarea style={textAreaStyle} placeholder={userMessagePlaceholder}/>
-                <textarea style={textAreaStyle}/>
+                <AclFilter 
+                    text="Display User Message on Criteria Match"
+                    placeholder={userMessagePlaceholder}
+                    style={AclFilterStyle}/>
+                <AclFilter 
+                    text="Apply nework ACL on traffic"
+                    style={AclFilterStyle}/>    
             </div>
         </div>
     )

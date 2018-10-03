@@ -8,6 +8,10 @@ const textAreaStyle = {
     height: '160px'
 }
 
+const nameInputStyle = {
+    height: '24px'
+}
+
 const Dap = ({radioItems}) => {
     return (
         <div className="dap">
@@ -15,7 +19,7 @@ const Dap = ({radioItems}) => {
                 <div className="left">
                     <div className="field">
                         <label>Name</label>
-                        <input type='text'/>
+                        <input type='text' style={nameInputStyle}/>
                     </div>
                     <div className="field">
                         <label>Policy Description</label>
