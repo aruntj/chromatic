@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ComboBox = ({values}) => {
+const ComboBox = ({values}) => {2
     return (
         <select>
             {values.map((option, _) => {
