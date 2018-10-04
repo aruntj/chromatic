@@ -5,6 +5,8 @@ import Actions from './Actions/Actions';
 import RuleList from './Rule/RuleList';
 import {rules} from './Rule/Rule.stories';
 import InlineContainer from './InlineContainer/InlineContainer';
+import Summary from './Summary/Summary';
+import {values as summaries} from './Summary/Summary.stories';
 // import "./Dap.css";
 
 const textAreaStyle = {
@@ -77,6 +79,14 @@ const Dap = ({radioItems}) => {
                     <label>AAA Criteria</label>
                     <InlineContainer>
                         <RuleList rules={rules}/>
+                    </InlineContainer>
+                </div>
+            </div>
+            <div style={{marginTop: '30px', marginRight: '10px'}}>
+                <div className="field" >
+                    <label>Endpoint Criteria</label>
+                    <InlineContainer>
+                        <Summary values={summaries} />
                     </InlineContainer>
                 </div>
             </div>

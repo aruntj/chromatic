@@ -12,6 +12,16 @@ var _Actions = require('./Actions/Actions');
 
 var _Actions2 = _interopRequireDefault(_Actions);
 
+var _RuleList = require('./Rule/RuleList');
+
+var _RuleList2 = _interopRequireDefault(_RuleList);
+
+var _Rule = require('./Rule/Rule.stories');
+
+var _InlineContainer = require('./InlineContainer/InlineContainer');
+
+var _InlineContainer2 = _interopRequireDefault(_InlineContainer);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // import "./Dap.css";
@@ -22,6 +32,10 @@ var textAreaStyle = {
 
 var nameInputStyle = {
     height: '24px'
+};
+
+var margin20 = {
+    marginTop: "20px"
 };
 
 var Dap = function Dap(_ref) {
@@ -96,6 +110,24 @@ var Dap = function Dap(_ref) {
                 'div',
                 { className: 'right' },
                 _react2.default.createElement(_Actions2.default, { radioItems: radioItems })
+            )
+        ),
+        _react2.default.createElement(
+            'div',
+            { style: { marginTop: '30px', marginRight: '10px' } },
+            _react2.default.createElement(
+                'div',
+                { className: 'field' },
+                _react2.default.createElement(
+                    'label',
+                    null,
+                    'AAA Criteria'
+                ),
+                _react2.default.createElement(
+                    _InlineContainer2.default,
+                    null,
+                    _react2.default.createElement(_RuleList2.default, { rules: _Rule.rules })
+                )
             )
         )
     );
